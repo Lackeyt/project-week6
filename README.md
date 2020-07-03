@@ -1,43 +1,23 @@
-Get Started:
+#  _Currency Exchanger_
 
-FIRST: [REMEMBER TO (1) CHANGE package.json PROJECT NAME AND DESCRIPTION TO CURRENT PROJECT NAME AND DESCRIPTION, (2) CHANGE TITLE OF HtmlWebpackPlugin IN webpack.config.js TO CURRENT PROJECT NAME, AND (3) CHANGE TITLE OF project-name.js IN SRC DIRECTORY TO NAME OF CURRENT PROJECT.]
-
-SECOND:
-  $ npm install
-  $ npm install dotenv-webpack --save-dev
-  $ git init
-  $ git add .gitignore
-  $ git commit -m "Activate .gitignore"
-  $ npm run build
-  $ git add .
-  $ git commit -m "Initial global commit"
-
-  $ npm run start (to initiate live server)
-
-
-#  _{title}_
-
-#### _{brief desc}_
-##### __Created:__ 5/29/2020
-##### __Last Updated:__ 6/3/2020 
+#### _Convert a user entered amount from one currency to another_
+##### __Created:__ 7/3/2020
+##### __Last Updated:__ 7/3/2020 
 ##### By _**Tyson Lackey**_  
 
 
 ## Description
 
-_{detailed desc}_
+_Using the exchangerate.com API, user inputted values are converted between available currencies. Users can select a "to currency" and a "from currency". The user entered amount is converted between the "from currency" and the "to currency." The original user entered amount and its currency code is displayed along with the converted value and the associated currency code of the new currency._
 
 ## Behaviors
 
 | Spec| Example input | Example Output
 | ----------- | ----------- | ----------- |
-| Behavior | input | output |
-| Behavior | input | output |
-| Behavior | input | output |
-| Behavior | input | output |
-| Behavior | input | output |
-| Behavior | input | output |
-| Behavior | input | output |
+| If User enters a non-number return error | "seven" | "Please enter a number for currency amount" |
+| If API Call succeds but returns an error result, return error | input | "The request returned an error:{API reponse error}' |
+| If API Call fails, return error | input | "There has been an error processing your request" |
+| User entered number is converted from one user selected currency to another | input | output |
 
 ## Setup/Installation Requirements
 
@@ -53,20 +33,18 @@ _{detailed desc}_
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Open via Bash/GitBash:
 
 1. Clone this repository onto your computer:
-    "git clone {github repo URL}"
-2. Navigate into the "{project name}" directory in Visual Studio Code or preferred text editor:
+    "git clone https://github.com/Lackeyt/project-week6"
+2. Navigate into the "project-week6" directory in Visual Studio Code or preferred text editor:
 3. Open the project
     "code ."
+4. Navigate to https://www.exchangerate-api.com/ in your web browser and follow the directions to receive your API key
+5. create a .env file in the "project-week6" directory
+6. in the .env file, enter "API_KEY = [your API key from step 4]"
 4. Open your computer's terminal and navigate to the directory bearing the name of the program and containing the top level subdirectories and files.
 5. Enter the command "$ npm install" in the terminal and press "Enter".
 6. Enter the command "$ npm run build" in the terminal and press "Enter".
 7. Enter the command "$ npm run start" in the terminal and press "Enter".
-8. Open index.html in your browser:
-    "open index.html"
 
-##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View Directly in your Browser:
-
-* Navigate to {GH Pages URL} in your web browser.
 
 ## Known Bugs
 
@@ -86,10 +64,13 @@ _{detailed desc}_
 * Bootstrap
 * Javascript
 * JQuery
+* webpack
 
 ## Resources:
 
-* 
+* https://sethrobertson.github.io/GitFixUm/fixup.html#bfg  -assistance with commit cleaning
+* https://rtyley.github.io/bfg-repo-cleaner/  -tool used for commit cleaning
+* https://www.exchangerate-api.com/  -API resource for exchange rates
 
 ### License
 
