@@ -6,9 +6,13 @@
   <title>Currency Exchanger</title>
 </head>
 <body>
-  <h1 class="jumbotron">Currency Exchanger</h1>
   <div class="container">
+    <h1 class="jumbotron">Currency Exchanger</h1>
+  </div>
+  <div class="container-fluid">
     <form id="usdEntry">
+      <p id="lastUpdate"></p>
+      <p id="nextUpdate"></p>
       <input id="amount" type="text" placeholder="Enter currency amount">
       <label for="curListFrom">Convert from:</label>
       <select id="curListFrom" name="currenciesFrom">
