@@ -28,7 +28,7 @@ async function exchangeRateResponse(amount, currencyFrom, currencyTo) {
 }
 
 $(document).ready(function() {
-  $("#usdEntry").submit(async function(event){
+  $("#usdEntry").submit(function(event){
     event.preventDefault();
     let amount = $("#amount").val();
     let currencyFrom = $("#curListFrom").val();
