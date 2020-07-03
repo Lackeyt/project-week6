@@ -20,8 +20,8 @@ async function exchangeRateResponse(amount, currencyFrom, currencyTo) {
         let convertedCurrency = (amount * conversionRate).toFixed(2);
         $("#output").html(`${amount} ${currencyFrom} = ${convertedCurrency} ${currencyTo}`);
         $("#exchangeRate").html(`Current Exchange Rate (${currencyFrom} -> ${currencyTo}): ${conversionRate.toFixed(4)}`);
-        $("#lastUpdate").html(`Last Updated (UTC): ${responseObject.time_last_update_utc}`);
-        $("#nextUpdate").html(`Next Update (UTC): ${responseObject.time_next_update_utc}`);
+        $("#lastUpdate").html(`Last Updated (UTC): ${responseObject.time_last_update_utc.slice(0,25)}`);
+        $("#nextUpdate").html(`Next Update (UTC): ${responseObject.time_next_update_utc.slice(0,25)}`);
       }
     }
   }

@@ -1,8 +1,18 @@
 .jumbotron {
   text-align: center;
   background-color: rgb(189, 154, 255, .5);
+  color: whitesmoke;
 }
 
 .container-fluid {
   text-align: center;
+}
+
+form {
+  color: limegreen;
+}
+
+body {
+  background-color: black;
+  color: limegreen;
 }
