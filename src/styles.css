@@ -1,7 +1,9 @@
 .jumbotron {
   text-align: center;
-  background-color: rgb(189, 154, 255, .5);
-  color: whitesmoke;
+  background-color: black;
+  color: limeGreen;
+  border: solid;
+  border-color: limegreen;
 }
 
 .container-fluid {
@@ -15,4 +17,17 @@ form {
 body {
   background-color: black;
   color: limegreen;
+}
+
+input,
+select,
+button {
+  background-color: rgb(36, 36, 36);
+  color: limegreen;
+  border-color: limegreen;
+}
+
+::placeholder{
+  color: limegreen;
+  opacity: .4;
 }
